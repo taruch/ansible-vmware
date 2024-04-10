@@ -1,10 +1,5 @@
 ---
 
-# Will come from vCenter credential in AAP
-vcenter_hostname: portal.vc.opentlc.com
-vcenter_username: sandbox-dg5tf@vc.opentlc.com
-vcenter_password: eXSjzp.n34r8
-
 # Will come from survey in AAP
 vm_envs:
     option1:
@@ -17,14 +12,14 @@ vm_envs:
         vm_network: 'segment-sandbox-dg5tf'
         vm_folder: '/Workloads/sandbox-dg5tf'
 
-# Will come from survey in AAP
-vm_template: 'rhel86-tpl'
-vm_network: 'segment-sandbox-dg5tf'
-vm_name: "ruch-test8"
-vm_cpus: 2
-memsize_MiB: 4096
-vm_ip: 192.168.160.16
-vm_guest_domain: 'entrenchedrealist.com'
+# # Will come from survey in AAP
+# vm_template: 'rhel86-tpl'
+# vm_network: 'segment-sandbox-dg5tf'
+# vm_name: "ruch-test8"
+# vm_cpus: 2
+# memsize_MiB: 4096
+# vm_ip: 192.168.160.16
+# vm_guest_domain: 'entrenchedrealist.com'
 
 
-# Ideally we should be able to select a 
+# Ideally we should be able to select a

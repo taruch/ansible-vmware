@@ -1,2 +1,3 @@
 *artifact*.json
 vars/vmware
+collections/ansible_collections
