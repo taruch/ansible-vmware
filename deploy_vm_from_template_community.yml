@@ -31,7 +31,7 @@
         template: "{{ vm_template }}"
         name: "{{ vm_name }}"
         networks:
-          - name: '{{ vm_network }}'
+          - name: "{{ vm_envs[vm_env]['vm_network'] }}"
             type: static
             device_type: vmxnet3
             ip: "{{ vm_ip }}"
