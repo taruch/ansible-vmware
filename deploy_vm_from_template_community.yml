@@ -9,7 +9,7 @@
     vcenter_hostname: '{{ lookup("env", "VMWARE_HOST") }}'
     vcenter_username: '{{ lookup("env", "VMWARE_USER") }}'
     vcenter_password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
-  
+
   tasks:
 
     - name: Debug variables
@@ -18,16 +18,16 @@
 
     - name: Debug variables
       ansible.builtin.debug:
-        msg: "{{ vm_envs[ vm_env ]['datacenter'] }}"
+        msg: "{{ vm_envs[vm_env]['datacenter'] }}"
 
     - name: Clone a virtual machine from Linux template and customize
       community.vmware.vmware_guest:
         hostname: "{{ vcenter_hostname }}"
         username: "{{ vcenter_username }}"
         password: "{{ vcenter_password }}"
-        datacenter: "{{ vm_envs[ vm_env ]['datacenter'] }}"
-        cluster: "{{ vm_envs[ vm_env ]['vm_cluster'] }}"
-        folder: "{{ vm_envs[ vm_env ]['vm_folder'] }}"
+        datacenter: "{{ vm_envs[vm_env]['datacenter'] }}"
+        cluster: "{{ vm_envs[vm_env]['vm_cluster'] }}"
+        folder: "{{ vm_envs[vm_env]['vm_folder'] }}"
         template: "{{ vm_template }}"
         name: "{{ vm_name }}"
         networks:

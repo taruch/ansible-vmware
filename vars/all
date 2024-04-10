@@ -5,7 +5,8 @@ vm_envs:
     option1:
         datacenter: 'SDDC-Datacenter'
         vm_cluster: 'Cluster-1'
-        vm_folder: '/Workloads/sandbox-dg5tf'
+        vm_folder: 'Workloads/sandbox-mz7v8'
+        vm_network: 'segment-sandbox-mz7v8'
     option2:
         datacenter: 'SDDC-Datacenter2'
         vm_cluster: 'Cluster-2'
@@ -14,11 +15,10 @@ vm_envs:
 
 # # Will come from survey in AAP
 # vm_template: 'rhel86-tpl'
-# vm_network: 'segment-sandbox-dg5tf'
 # vm_name: "ruch-test8"
 # vm_cpus: 2
 # memsize_MiB: 4096
-# vm_ip: 192.168.160.16
+# vm_ip: 192.168.166.20
 # vm_guest_domain: 'entrenchedrealist.com'
 
 
