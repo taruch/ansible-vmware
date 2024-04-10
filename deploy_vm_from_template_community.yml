@@ -5,7 +5,11 @@
   gather_facts: false
   vars_files:
     - ./vars/all
-
+  vars:
+    vcenter_hostname: '{{ lookup("env", "VMWARE_HOST") }}'
+    vcenter_username: '{{ lookup("env", "VMWARE_USER") }}'
+    vcenter_password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
+  
   tasks:
 
     - name: Debug variables
