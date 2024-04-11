@@ -21,6 +21,9 @@
         msg: "{{ vm_envs[vm_env]['datacenter'] }}"
 
     - name: Clone a virtual machine from Linux template and customize
+      environment:
+        https_proxy: 'https://192.168.122.2:3128'
+        HTTPS_PROXY: 'https://192.168.122.2:3128'
       community.vmware.vmware_guest:
         hostname: "{{ vcenter_hostname }}"
         username: "{{ vcenter_username }}"
